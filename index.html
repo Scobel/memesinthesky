@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid">
+    <!-- Add 720 images here -->
+    <script>
+      for (let i = 1; i <= 720; i++) {
+        let filename = `000${i}`.slice(-4) + ".jpg";
+        let img = `<img src="images/jpgs/${filename}" alt="image${i}">`;
+        document.write(img);
+      }
+    </script>
+  </div>
+</body>
+</html>
